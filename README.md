@@ -62,7 +62,7 @@ source .env
 ```
 b. Register the operator: Before performing this step, you need to have some ETH on the ARB mainnet in your wallet to cover the fees.
 ```bash
-./0g-alignment-node registerOperator --key <Privatekey> --token-id <ID NFT> --commission 1 --chain-id 42161 --rpc https://arbitrum-one-rpc.publicnode.com --contract 0xdD158B8A76566bC0c342893568e8fd3F08A9dAac
+./0g-alignment-node registerOperator --key <Privatekey> --token-id <ID NFT> --commission 1 --chain-id 16661 --rpc https://evmrpc.0g.ai --contract 0x7BDc2aECC3CDaF0ce5a975adeA1C8d84Fd9Be3D9
 ```
 Note:
 ```bash
@@ -99,9 +99,9 @@ Note: After you select the NFT, click delegate, and sign the transaction, you ne
 ```bash
 ./0g-alignment-node approve --mainnet \
   --key <Privatekey> \
-  --chain-id 42161 \
-  --rpc https://arbitrum-one-rpc.publicnode.com \
-  --contract 0xdD158B8A76566bC0c342893568e8fd3F08A9dAac \
+  --chain-id 16661 \
+  --rpc https://evmrpc.0g.ai \
+  --contract 0x7BDc2aECC3CDaF0ce5a975adeA1C8d84Fd9Be3D9 \
   --destNode <Address hold NFT> \
   --tokenIds <ID1,ID2,ID3,ID4,ID5>
 ```
